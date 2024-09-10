@@ -1,0 +1,12 @@
+﻿using SecurityApp.Application.Models.Auth;
+using SecurityApp.Application.Models.Registration;
+
+namespace SecurityApp.Application.Contracts.Identity
+{
+    public interface IAuthService
+    {
+        Task<AuthResponse> Login(AuthRequest request);
+        Task<RegistrationResponse> Register(RegistrationRequest request);
+
+    }
+}
